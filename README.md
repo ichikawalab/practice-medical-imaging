@@ -4,20 +4,33 @@
 
 ## 内容
 
+### 第8回 サブトラクション処理（`imgproc/08_subtraction/`）
+
 | ファイル | 内容 |
 | --- | --- |
-| [imgproc/09_3d_ai.ipynb](imgproc/09_3d_ai.ipynb) | 第9回 3次元画像処理とAIによる医用画像処理：TotalSegmentatorによる臓器の自動抽出（Google Colab用） |
-| [imgproc/data/LIDC-IDRI-0265_CT.zip](imgproc/data/LIDC-IDRI-0265_CT.zip) | 第9回で使用する胸部CT画像（DICOM，133枚） |
+| [08_warping.ipynb](imgproc/08_subtraction/08_warping.ipynb) | 演習8-2：局所的な位置合わせ（warping）（Google Colab用） |
+| [data/warp_past.tif](imgproc/08_subtraction/data/warp_past.tif)，[data/warp_current.tif](imgproc/08_subtraction/data/warp_current.tif) | 演習8-2で使用する過去画像と現在画像（胸部X線画像に模擬の陰影と変形を加えたもの，512×512画素，16-bit） |
+
+第8回のノートブックは，次のリンクからGoogle Colabで開けます．
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ichikawalab/practice-medical-imaging/blob/main/imgproc/08_subtraction/08_warping.ipynb)
+
+### 第9回 3次元画像処理とAIによる医用画像処理（`imgproc/09_3d_ai/`）
+
+| ファイル | 内容 |
+| --- | --- |
+| [09_3d_ai.ipynb](imgproc/09_3d_ai/09_3d_ai.ipynb) | TotalSegmentatorによる臓器の自動抽出（Google Colab用） |
+| [data/LIDC-IDRI-0265_CT.zip](imgproc/09_3d_ai/data/LIDC-IDRI-0265_CT.zip) | 第9回で使用する胸部CT画像（DICOM，133枚） |
 
 第9回のノートブックは，次のリンクからGoogle Colabで開けます．
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ichikawalab/practice-medical-imaging/blob/main/imgproc/09_3d_ai.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ichikawalab/practice-medical-imaging/blob/main/imgproc/09_3d_ai/09_3d_ai.ipynb)
 
 ## 使用している画像とソフトウェア
 
 ### 画像：LIDC-IDRI（The Cancer Imaging Archive）
 
-`imgproc/data/LIDC-IDRI-0265_CT.zip` は，The Cancer Imaging Archive（TCIA）で公開されている LIDC-IDRI の症例 LIDC-IDRI-0265 の胸部CT画像です．
+`imgproc/09_3d_ai/data/LIDC-IDRI-0265_CT.zip` は，The Cancer Imaging Archive（TCIA）で公開されている LIDC-IDRI の症例 LIDC-IDRI-0265 の胸部CT画像です．
 TCIAにより匿名化されたデータを，変更せずに収録しています．
 ライセンスは [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) です．利用条件は zip 内の `LICENSE` を参照してください．
 
